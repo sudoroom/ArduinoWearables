@@ -1,0 +1,1 @@
+int ledPin=13;int buttonPin=A2; int buttonState; void setup(){ pinMode(ledPin, OUTPUT);  digitalWrite(A2,HIGH); }void loop(){  buttonState=analogRead(buttonPin);   if(buttonState<512){   digitalWrite(ledPin, HIGH);  }else{   digitalWrite(ledPin, LOW);  } }

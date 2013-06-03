@@ -1,0 +1,1 @@
+int piezo=5;void setup(){  pinMode(piezo, OUTPUT); }void loop(){  for(int i=0; i<100; i++){    digitalWrite(piezo, HIGH);    delayMicroseconds(659);    digitalWrite(piezo, LOW);    delayMicroseconds(659);  }  for(int j=0; j<100; j++){    digitalWrite(piezo, HIGH);    delayMicroseconds(1760);    digitalWrite(piezo, LOW);    delayMicroseconds(1760);  }}

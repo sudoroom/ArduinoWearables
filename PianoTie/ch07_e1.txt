@@ -1,0 +1,1 @@
+int ledPin=13;int buttonPin=6;  int buttonState; void setup(){ pinMode(ledPin, OUTPUT);  pinMode(buttonPin, INPUT);  digitalWrite(buttonPin,HIGH); }void loop(){  buttonState=digitalRead(buttonPin);    if(buttonState==LOW){   digitalWrite(ledPin, HIGH);  }else{   digitalWrite(ledPin, LOW);  } }
